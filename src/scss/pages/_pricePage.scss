@@ -1,0 +1,161 @@
+/*=============================================
+=                 PricePage                   =
+=============================================*/
+.price-page {
+  padding-bottom: 110px;
+
+  .page-title {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    max-width: 295px;
+    width: 100%;
+    margin-right: 24px;
+
+  }
+
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    height: 65px;
+    padding: 14px 80px;
+    background: #3D4C87;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #D1FDFF;
+    border: 2px solid #3D4C87;
+    transition: $transition;
+
+    &:hover,
+    &.active {
+      background: rgba(61, 77, 137, 0.4);
+      border-color: #D1FDFF;
+    }
+  }
+
+  &__content {
+    padding-left: 24px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: #596281;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 103.36%;
+    text-transform: uppercase;
+    color: #F8F8F8;
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #F8F8F8;
+    max-width: 792px;
+  }
+
+  &__img {
+    height: 305px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+    &-head,
+    &-item {
+      display: flex;
+      gap: 22px;
+      margin-bottom: 10px;
+      height: 55px;
+      font-size: 14px;
+      line-height: 130%;
+      align-items: center;
+      text-align: center;
+
+      &__text {
+        border: 1px solid #FFFFFF;
+        line-height: 135%;
+        color: #F8F8F8;
+        flex: 1;
+      }
+
+      &__price {
+        border: 1px solid #D1FDFF;
+        max-width: 275px;
+        width: 100%;
+        color: #D1FDFF;
+      }
+
+      &__text,
+      &__price {
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-head {
+      font-weight: 500;
+      font-size: 15px;
+      margin-bottom: 20px;
+      &__text {
+        background: rgba(61, 77, 137, 0.3);
+      }
+
+      &__price {
+
+        background: rgba(209, 253, 255, 0.25);
+
+      }
+    }
+  }
+  &__footer{
+    display: flex;
+    align-items: center;
+    &-text{
+      max-width: 280px;
+      width: 100%;
+      margin-right: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 135%;
+      color: #C6D4D3;
+    }
+    .btn{
+      padding: 22px 45px;
+    }
+  }
+}
+
+/*=====  End of PricePage  ======*/
