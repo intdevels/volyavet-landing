@@ -1,0 +1,88 @@
+/*=============================================
+=                ContactsPage                 =
+=============================================*/
+ .contacts-page{
+   padding-bottom: 110px;
+   .page-title{
+     margin-top: 45px;
+   }
+   &__inner{
+     display: flex;
+     justify-content: space-between;
+   }
+   &__left{
+     max-width: 350px;
+     width: 100%;
+   }
+    &__right{
+      max-width: 845px;
+      width: 100%;
+    }
+   &__info{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 35px;
+     min-height: 93px;
+   }
+   &__item{
+     max-width: 263px;
+     &:nth-child(2){
+       max-width: 184px;
+     }
+     &:nth-child(3){
+       max-width: 199px;
+     }
+     &-title{
+       font-weight: 700;
+       font-size: 20px;
+       line-height: 130%;
+       text-transform: uppercase;
+       color: #F8F8F8;
+       margin-bottom: 13px;
+     }
+     &-text{
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 171%;
+       color: #F8F8F8;
+       display: flex;
+       justify-content: space-between;
+       position: relative;
+       a{
+         color:inherit;
+       }
+       a,p{
+         display: block;
+         width: 100%;
+         padding-left: 33px;
+       }
+       svg{
+            position: absolute;
+            left: 0;
+         top: 3px;
+       }
+     }
+     svg{
+     }
+   }
+   &__form{
+     width: 100%;
+     &-title{
+       font-weight: 700;
+       font-size: 20px;
+       line-height: 19px;
+       text-transform: uppercase;
+       margin-bottom: 15px;
+
+       color: #F8F8F8;
+
+     }
+   }
+ }
+.map{
+  height: 220px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/*=====  End of ContactsPage  ======*/

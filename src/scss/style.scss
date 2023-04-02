@@ -6,12 +6,14 @@
 @import "./libs/aos";
 
 @import "./components/search";
+@import "./components/input";
 @import "./components/tags";
 @import "./components/pageNavigation";
 
 @import "./pages/offerPage";
 @import "./pages/errorPage";
 @import "./pages/searchPage";
+@import "./pages/contactsPage";
 // Sections or Pages SCSS-files imports
 @import "./header";
 @import "./footer";
