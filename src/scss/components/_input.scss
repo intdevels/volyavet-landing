@@ -1,6 +1,7 @@
 .input{
   &-group{
     width: 100%;
+    margin-bottom: 15px;
     &__input{
       background: rgba(198, 212, 211, 0.05);
       border: 1px solid #D1FDFF;
@@ -11,11 +12,14 @@
       line-height: 135%;
       padding: 14px 32px;
       width: 100%;
-      margin-bottom: 15px;
       color: #f8f8f8;
+      font-family: "Gotham Pro",sans-serif;
       &::placeholder{
         color: #C6D4D3;
       }
+    }
+    &__textarea{
+      height: 100%;
     }
   }
 }

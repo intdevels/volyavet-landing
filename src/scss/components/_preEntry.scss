@@ -1,0 +1,85 @@
+/*=============================================
+=                 PreEntry                    =
+=============================================*/
+
+.pre-entry {
+  margin: 110px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    max-width: 505px;
+    width: 100%;
+
+    img {
+      border-radius: 10px 10px 150px 10px;
+      overflow: hidden;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    margin-left: 20px;
+
+    div.page-title {
+      margin-top: 0;
+      margin-left: 0;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 128.74%;
+    }
+  }
+
+  &__desc {
+    margin-left: 50px;
+    margin-bottom: 40px;
+    max-width: 543px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #F8F8F8;
+  }
+
+  &__form {
+    &-inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 40px;
+
+      .input-group {
+        margin-bottom: 20px;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-footer{
+      display: flex;
+      p{
+        max-width: 210px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 135%;
+        color: #BCCED0;
+        margin-right: 7px;
+      }
+      .btn{
+        padding: 22px 37px;
+      }
+    }
+  }
+
+  &__right {
+    .input-group {
+      height: 100%;
+    }
+  }
+
+
+}
+
+/*=====  End of PreEntry  ======*/
