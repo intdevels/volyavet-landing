@@ -1,0 +1,40 @@
+/*=============================================
+=                 PageNavigation              =
+=============================================*/
+
+.page-navigation {
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+  &-item {
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-white;
+    position: relative;
+    &:not(:nth-last-child(1)){
+    padding-right: 25px;
+    margin-right: 10px;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background: $color-turquoise;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &:nth-last-child(1) {
+      padding-right: 0;
+    }
+    a {
+      color: inherit;
+    }
+    span{
+      color: #C6D4D3;
+    }
+  }
+}
+/*=====  End of PageNavigation  ======*/

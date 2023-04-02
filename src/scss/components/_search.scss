@@ -1,0 +1,44 @@
+/*=============================================
+=                  Search                     =
+=============================================*/
+
+.search {
+  background: rgba($color-turquoise, 0.3);
+  border: 1px solid $color-turquoise;
+  border-radius: 30px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 196px;
+  width: 100%;
+  &-input {
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: $color-light-gray;
+    outline: none;
+    padding: 0 16px;
+    max-width: calc(100% - 38px);
+    &::placeholder {
+      color: $color-light-gray;
+    }
+  }
+  &-btn {
+    height: 38px;
+    width: 38px;
+    background: rgba($color-white, 0.15);
+    border: 2px solid $color-turquoise;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      fill: $color-turquoise ;
+    }
+  }
+}
+
+/*=====  End of Search  ======*/

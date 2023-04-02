@@ -1,0 +1,26 @@
+// Global SCSS-files imports
+@import "./fonts";
+@import "./vars";
+@import "./reset";
+@import "./global";
+@import "./libs/aos";
+
+@import "./components/search";
+@import "./components/tags";
+@import "./components/pageNavigation";
+
+@import "./pages/offerPage";
+@import "./pages/errorPage";
+@import "./pages/searchPage";
+// Sections or Pages SCSS-files imports
+@import "./header";
+@import "./footer";
+
+// Libs
+@import "./libs/swiper";
+
+.wrapper {
+  padding: 0 15px;
+  max-width: 1270px;
+  margin: 0 auto;
+}

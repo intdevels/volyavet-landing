@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <meta name="description" content="description">
+</head>
+
+<body class="main__body">
+  <!-- Header -->
+  @@include('./html/_header.html')
+
+  <!-- Main Page -->
+  <main>
+    <section class="page-error">
+      <div class="wrapper page-error__wrapper">
+        <div class="page-error__inner">
+          <div class="page-error__left">
+            <div class="page-error__img">
+              <img src="./img/404-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="page-error__content">
+            <p class="page-error__text">Упс! Этой страницы не существует. Приносим извинения за неудобства. </p>
+            <h1 class="page-error__title">404</h1>
+            <a href="#" class="btn btn-full page-error__link">На главную</a>
+          </div>
+          <div class="page-error__right">
+            <div class="page-error__img">
+              <img src="./img/404-2.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('./html/_footer.html')
+
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>

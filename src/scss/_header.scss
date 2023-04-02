@@ -1,0 +1,73 @@
+/*=============================================
+=                  Header                      =
+=============================================*/
+
+.header {
+  // стили для header
+  &-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 40px;
+
+  }
+  &-logo{
+    // margin-right: 20px;
+  }
+  &-menu{}
+  &-list{
+    display: flex;
+    align-items: center;
+  }
+  &-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $color-turquoise;
+    padding-right: 33px;
+   
+    &:nth-last-child(1){
+      padding-right: 0;
+    }
+    // &:nth-last-child(4){
+    //   padding-right: 30px;
+    //   // color: $color-navy;
+    // }
+    // &:nth-last-child(3){
+    //   padding-left: 28px;
+    // }
+    // &:nth-last-child(1),
+    // &:nth-last-child(2),
+    // &:nth-last-child(3){
+    //   color: $color-navy;
+    //   .header-link{
+    //     &::before{
+    //       background:$color-navy;
+    //     }
+    //   }
+    // }
+  }
+  &-link{
+    color: inherit;
+    position: relative;
+    padding: 5px 0;
+    
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: $color-turquoise;
+      left: 0;
+      bottom: 0;
+      transition: $transition;
+    }
+    &:hover::before{
+      width: 100%;
+    }
+  }
+}
+
+/*=====  End of Header  ======*/

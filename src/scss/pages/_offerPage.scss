@@ -1,0 +1,19 @@
+/*=============================================
+=                OfferPage                    =
+=============================================*/
+
+.offer-page {
+  padding-bottom: 110px;
+  .page-title {
+    margin-top: 45px;
+  }
+  &__text {
+    color: $color-light-gray;
+    font-size: 16px;
+    line-height: 130%;
+    b{
+      font-weight: 700;
+    }
+  }
+}
+/*=====  End of OfferPage  ======*/

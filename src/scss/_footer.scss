@@ -1,0 +1,79 @@
+/*=============================================
+=                  Footer                     =
+=============================================*/
+
+.footer {
+  font-size: 14px;
+  line-height: 130%;
+  color: $color-light-gray;
+  padding: 35px 0;
+  background: $color-dark-blue;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-left {
+    display: flex;
+    max-width: 744px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 427px;
+    width: 100%;
+    &__link {
+      color: $color-white;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+    }
+  }
+  &-menu {
+    &:nth-child(2) {
+      line-height: 195.5%;
+      span {
+        margin-top: -6px;
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    color: $color-light-gray;
+    margin-bottom: 12px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    svg {
+      margin-right: 17px;
+      min-width: 18px;
+    }
+
+    min-width: 177px;
+    max-width: 201px;
+    width: 100%;
+  }
+  &-info {
+    color: $color-white;
+    a {
+      color: $color-turquoise;
+    }
+    p {
+      margin-bottom: 12px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-social {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.page-top {
+}
+
+/*=====  End of Footer  ======*/

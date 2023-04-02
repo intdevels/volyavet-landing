@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <meta name="description" content="description">
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <!-- Main Page -->
+    <main>
+        <div class="wrapper">
+            <nav class="page-navigation">
+                <ul class="page-navigation-list">
+                    <li class="page-navigation-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="page-navigation-item">
+                        <span>Поиск</span>
+                    </li>
+                </ul>
+            </nav>
+            <section class="search-page">
+                <div class="page-title">
+                    <h1>найдено - <span>5</span></h1>
+                    <p>по запросу «Кот»</p>
+                </div>
+
+                <form class="search-page__form search">
+                    <input type="text" class="search-input" placeholder="Поиск" value="Кот">
+                    <button class="search-btn">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.1655 10.8842H12.3632L12.0789 10.6171C13.1085 9.45347 13.6744 7.96795 13.6733 6.43159C13.6733 5.15955 13.2861 3.91606 12.5608 2.85839C11.8355 1.80072 10.8045 0.976371 9.59834 0.489579C8.39216 0.0027867 7.06491 -0.12458 5.78443 0.123584C4.50396 0.371748 3.32776 0.984298 2.40459 1.88377C1.48142 2.78325 0.852734 3.92925 0.598031 5.17685C0.343329 6.42446 0.474052 7.71764 0.973668 8.89286C1.47329 10.0681 2.31936 11.0726 3.40489 11.7793C4.49043 12.486 5.76667 12.8632 7.07223 12.8632C8.70726 12.8632 10.2103 12.2794 11.368 11.3097L11.6422 11.5868V12.3684L16.7199 17.3059L18.2331 15.8316L13.1655 10.8842ZM7.07223 10.8842C4.54353 10.8842 2.50228 8.89539 2.50228 6.43159C2.50228 3.9678 4.54353 1.97895 7.07223 1.97895C9.60094 1.97895 11.6422 3.9678 11.6422 6.43159C11.6422 8.89539 9.60094 10.8842 7.07223 10.8842Z" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="tags-block">
+                    <div class="tags-title">Уточнить поиск в разделе:</div>
+                    <ul class="tags-list">
+                        <li class="tags-item"><a href="#" class="tags-link">Новости и акции</a></li>
+                        <li class="tags-item"><a href="#" class="tags-link">О нас</a></li>
+                        <li class="tags-item"><a href="#" class="tags-link">услуги</a></li>
+                        <li class="tags-item"><a href="#" class="tags-link active">библиотека</a></li>
+                        <li class="tags-item"><a href="#" class="tags-link">наша команда</a></li>
+                        <li class="tags-item"><a href="#" class="tags-link">отзывы</a></li>
+                        <li class="tags-item"><a href="#" class="tags-link">контакты</a></li>
+                    </ul>
+                </div>
+                <div class="search-page__posts">
+                    <div class="search-page__post">
+                        <div class="search-page__img">
+                            <img src="img/search-item.jpg" alt="search-item">
+                        </div>
+                        <div class="search-page__content">
+                            <div class="search-page__text">
+                                <div class="search-page__head">
+                                    <h2 class="search-page__title">Как часто нужно стричь когти своему коту?</h2>
+                                    <span class="search-page__date">16.06.23</span>
+                                </div>
+                                <p class="search-page__desc">
+                                    VolyaVet – это больше, чем просто ветеринарная клиника. Мы – семья, ваша поддержка и
+                                    опора во всём, что связано с вашими питомцами. <br>
+                                    У нас индивидуальный подход к каждому пациенту и владельцу...
+                                </p>
+                            </div>
+                            <div class="search-page__btn">
+                                <a href="#" class="btn">смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-page__post">
+                        <div class="search-page__img">
+                            <img src="img/search-item.jpg" alt="search-item">
+                        </div>
+                        <div class="search-page__content">
+                            <div class="search-page__text">
+                                <div class="search-page__head">
+                                    <h2 class="search-page__title">Как часто нужно стричь когти своему коту?</h2>
+                                    <span class="search-page__date">16.06.23</span>
+                                </div>
+                                <p class="search-page__desc">
+                                    VolyaVet – это больше, чем просто ветеринарная клиника. Мы – семья, ваша поддержка и
+                                    опора во всём, что связано с вашими питомцами. <br>
+                                    У нас индивидуальный подход к каждому пациенту и владельцу...
+                                </p>
+                            </div>
+                            <div class="search-page__btn">
+                                <a href="#" class="btn">смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-page__post">
+                        <div class="search-page__img">
+                            <img src="img/search-item.jpg" alt="search-item">
+                        </div>
+                        <div class="search-page__content">
+                            <div class="search-page__text">
+                                <div class="search-page__head">
+                                    <h2 class="search-page__title">Как часто нужно стричь когти своему коту?</h2>
+                                    <span class="search-page__date">16.06.23</span>
+                                </div>
+                                <p class="search-page__desc">
+                                    VolyaVet – это больше, чем просто ветеринарная клиника. Мы – семья, ваша поддержка и
+                                    опора во всём, что связано с вашими питомцами. <br>
+                                    У нас индивидуальный подход к каждому пациенту и владельцу...
+                                </p>
+                            </div>
+                            <div class="search-page__btn">
+                                <a href="#" class="btn">смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    @@include('./html/_footer.html')
+
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
