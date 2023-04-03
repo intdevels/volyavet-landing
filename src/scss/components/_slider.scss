@@ -1,0 +1,70 @@
+/*=============================================
+=                    Tags                     =
+=============================================*/
+
+.slider {
+  &-navigation {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 27px;
+      padding: 0 27px;
+      background: #2B3762;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #C6D4D3;
+      z-index: -1;
+    }
+  }
+
+  &-pagination {
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+
+    .swiper-pagination-bullet {
+      border: 2px solid #D1FDFF;
+      background: transparent;
+      transition: $transition;
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      margin-left: 0 !important;
+      margin-right: 15px !important;
+
+      &:nth-last-child(1) {
+        margin-right: 0 !important;
+      }
+
+      &.swiper-pagination-bullet-active {
+        width: 15px;
+        height: 15px;
+        background: rgba(100, 193, 198, 0.3);
+      }
+    }
+  }
+
+  &-button {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #D1FDFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+/*=====  End of Tags  ======*/
