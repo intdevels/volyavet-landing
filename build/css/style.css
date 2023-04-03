@@ -267,6 +267,13 @@ img {
   top: 0;
 }
 
+.page-title h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 128.74%;
+  color: #F8F8F8;
+}
+
 .btn {
   background: rgba(209, 253, 255, 0.3);
   border: 2px solid #d1fdff;
@@ -292,6 +299,10 @@ img {
 
 .btn.btn-full {
   width: 100%;
+}
+
+.section {
+  margin-bottom: 110px;
 }
 
 [data-aos][data-aos][data-aos-duration="50"],
@@ -2209,6 +2220,102 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 /*=====  End of Posts  ======*/
 
 /*=============================================
+=                    Tags                     =
+=============================================*/
+
+.slider-navigation {
+  margin-top: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-navigation__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 27px;
+  padding: 0 27px;
+  background: #2B3762;
+}
+
+.slider-navigation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #C6D4D3;
+  z-index: -1;
+}
+
+.slider-pagination {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-pagination .swiper-pagination-bullet {
+  border: 2px solid #D1FDFF;
+  background: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  margin-left: 0 !important;
+  margin-right: 15px !important;
+}
+
+.slider-pagination .swiper-pagination-bullet:nth-last-child(1) {
+  margin-right: 0 !important;
+}
+
+.slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 15px;
+  height: 15px;
+  background: rgba(100, 193, 198, 0.3);
+}
+
+.slider-button {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #D1FDFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*=====  End of Tags  ======*/
+
+/*=============================================
 =                 PreEntry                    =
 =============================================*/
 
@@ -3042,6 +3149,76 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 /*=====  End of PosyPage  ======*/
 
 /*=============================================
+=                AboutPage                   =
+=============================================*/
+
+.about-page {
+  padding-bottom: 110px;
+}
+
+.about-page__posts {
+  background: #212C53;
+  padding: 60px 0;
+}
+
+.about-page .page-title {
+  margin-top: 43px;
+  margin-bottom: 40px;
+}
+
+.about-page-title__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  max-width: 551px;
+  margin-left: 107px;
+}
+
+.about-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-page__item {
+  max-width: 33.3333333333%;
+}
+
+.about-page__img {
+  margin-bottom: 10px;
+}
+
+.about-page__img img {
+  border-radius: 15px;
+}
+
+.about-page__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 135%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/*=====  End of aboutPage  ======*/
+
+/*=============================================
 =                  Header                      =
 =============================================*/
 
@@ -3544,78 +3721,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 :root {
   --swiper-navigation-size: 44px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: var(--swiper-navigation-top-offset, 50%);
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
-  z-index: 10;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
-}
-
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  opacity: 0.35;
-  cursor: auto;
-  pointer-events: none;
-}
-
-.swiper-button-next.swiper-button-hidden,
-.swiper-button-prev.swiper-button-hidden {
-  opacity: 0;
-  cursor: auto;
-  pointer-events: none;
-}
-
-.swiper-navigation-disabled .swiper-button-next,
-.swiper-navigation-disabled .swiper-button-prev {
-  display: none !important;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
-}
-
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 10px);
-  right: auto;
-}
-
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-  content: "prev";
-}
-
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 10px);
-  left: auto;
-}
-
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  content: "next";
 }
 
 .swiper-button-lock {
