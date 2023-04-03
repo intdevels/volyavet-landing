@@ -1978,6 +1978,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .input-group {
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .input-group__input {
@@ -1990,8 +1991,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   line-height: 135%;
   padding: 14px 32px;
   width: 100%;
-  margin-bottom: 15px;
   color: #f8f8f8;
+  font-family: "Gotham Pro", sans-serif;
 }
 
 .input-group__input::-webkit-input-placeholder {
@@ -2012,6 +2013,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .input-group__input::placeholder {
   color: #C6D4D3;
+}
+
+.input-group__textarea {
+  height: 100%;
 }
 
 /*=============================================
@@ -2120,6 +2125,38 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   overflow: hidden;
 }
 
+.post-video {
+  position: relative;
+}
+
+.post-video::before,
+.post-video::after {
+  content: "";
+  position: absolute;
+}
+
+.post-video::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(89, 98, 129, 0.4);
+  border-radius: 15px;
+}
+
+.post-video::after {
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/play.svg);
+  background-position: center;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .post-content {
   position: relative;
   border-radius: 15px;
@@ -2170,6 +2207,97 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 /*=====  End of Posts  ======*/
+
+/*=============================================
+=                 PreEntry                    =
+=============================================*/
+
+.pre-entry {
+  margin: 110px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pre-entry__img {
+  max-width: 505px;
+  width: 100%;
+}
+
+.pre-entry__img img {
+  border-radius: 10px 10px 150px 10px;
+  overflow: hidden;
+}
+
+.pre-entry__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 20px;
+}
+
+.pre-entry__content div.page-title {
+  margin-top: 0;
+  margin-left: 0;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 128.74%;
+}
+
+.pre-entry__desc {
+  margin-left: 50px;
+  margin-bottom: 40px;
+  max-width: 543px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #F8F8F8;
+}
+
+.pre-entry__form-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.pre-entry__form-inner .input-group {
+  margin-bottom: 20px;
+}
+
+.pre-entry__form-inner .input-group:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.pre-entry__form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pre-entry__form-footer p {
+  max-width: 210px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #BCCED0;
+  margin-right: 7px;
+}
+
+.pre-entry__form-footer .btn {
+  padding: 22px 37px;
+}
+
+.pre-entry__right .input-group {
+  height: 100%;
+}
+
+/*=====  End of PreEntry  ======*/
 
 /*=============================================
 =                 PageNavigation              =
@@ -2762,10 +2890,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 =                LibraryPage                  =
 =============================================*/
 
-.library-page {
-  padding-bottom: 110px;
-}
-
 .library-page .page-title {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -2833,6 +2957,89 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 /*=====  End of LibraryPage  ======*/
+
+/*=============================================
+=                  PosyPage                   =
+=============================================*/
+
+.post-page {
+  margin-bottom: 110px;
+}
+
+.post-page .page-title {
+  margin-top: 45px;
+}
+
+.post-page .page-title__date {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 128.74%;
+  text-align: right;
+  color: #64C1C6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.post-page__inner {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 26px;
+}
+
+.post-page__img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.post-page__img img {
+  border-radius: 10px 10px 200px 10px;
+}
+
+.post-page__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.post-page__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #F8F8F8;
+}
+
+.post-page__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.post-page__footer .btn {
+  padding: 22px 50px;
+}
+
+/*=====  End of PosyPage  ======*/
 
 /*=============================================
 =                  Header                      =
