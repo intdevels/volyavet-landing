@@ -1,0 +1,120 @@
+/*=============================================
+=                   Team                     =
+=============================================*/
+.team {
+  &s {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 40px 25px;
+    margin-bottom: 50px;
+    &__footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .btn{
+        padding: 22px 40px;
+      }
+    }
+  }
+
+  cursor: pointer;
+
+  &:hover {
+    position: relative;
+    .team-default {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .team-hover{
+        opacity: 1;
+        visibility: visible;
+      .team-default {
+        opacity: 1;
+        visibility: visible;
+      }
+      }
+  }
+
+  &-img {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &-content {
+    position: relative;
+    border-radius: 15px;
+    padding: 11px 10px;
+    background: #596281;
+  }
+
+  &-default {
+    transition: $transition;
+
+  }
+
+  &-hover {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: $transition;
+
+    .btn {
+      padding: 22px 10px;
+    }
+    .team-desc{
+      font-size: 13px;
+      line-height: 135%;
+      margin-bottom: 17px;
+    }
+    .team-default{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: #F8F8F8;
+      margin-bottom: 32px;
+      flex: 1;
+    }
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #F8F8F8;
+    margin-bottom: 5px;
+  }
+
+  &-desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 135%;
+    color: #F8F8F8;
+    position: relative;
+    height: 54px;
+  }
+  &-old{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #D1FDFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/*=====  End of Team  ======*/
