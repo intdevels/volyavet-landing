@@ -40,7 +40,24 @@ main {
 img {
   max-width: 100%;
 }
-
+.page-tab{
+  background: #D9D9D9;
+  border-radius: 48px;
+  padding: 5px;
+  max-width: 219px;
+  margin-top: -10px;
+  margin-left: 55px;
+  margin-bottom: 40px;
+  &__inner{
+    background: #FFFFFF;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 7px;
+  }
+}
 .page-title {
   font-weight: 700;
   font-size: 40px;
