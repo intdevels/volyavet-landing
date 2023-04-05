@@ -90,8 +90,10 @@
       background: #212c54;
       position: relative;
       z-index: 2;
-      display: block;
       width: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
     .circle {

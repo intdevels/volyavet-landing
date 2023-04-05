@@ -115,7 +115,21 @@ img {
     color: #F8F8F8;
   }
 }
-
+.dark-bg{
+  background: #212C53;
+  padding: 55px 0 1px;
+}
+.page-desc{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-left: 105px;
+  max-width: 520px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
 .btn {
   background: rgba(209, 253, 255, 0.3);
   border: 2px solid #d1fdff;
