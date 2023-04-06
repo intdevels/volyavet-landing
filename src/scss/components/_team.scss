@@ -115,8 +115,10 @@
     bottom: 0;
     right: 0;
   }
-  &-block{
-
+  &s-block{
+    .slider-navigation__inner{
+      background: #212C53;
+    }
   }
 }
 

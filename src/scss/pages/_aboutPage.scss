@@ -87,13 +87,24 @@
 
     &-inner {
       padding: 23px 0;
-      background: #212c54;
+      background: #2a3661;
       position: relative;
       z-index: 2;
       width: inherit;
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      a{
+        svg path {
+          transition: $transition;
+        }
+        &:hover{
+          svg path {
+            fill-opacity: 1;
+          }
+        }
+      }
     }
 
     .circle {

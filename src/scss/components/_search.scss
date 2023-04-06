@@ -41,4 +41,27 @@
   }
 }
 
+.home-page {
+  .search{
+    background: rgba(209, 253, 255, 0.3);
+    /* Синий */
+
+    border: 1px solid #596281;
+    border-radius: 30px;
+    &-input {
+      color: #596281;
+
+      &::placeholder {
+        color: #596281;
+      }
+    }
+    &-btn {
+      background: rgba(89, 98, 129, 0.2);
+      border: 2px solid #596281;
+      svg {
+        fill: #596281;
+      }
+    }
+  }
+}
 /*=====  End of Search  ======*/

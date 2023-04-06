@@ -10,7 +10,9 @@
 body {
   font-family: "Gotham Pro", sans-serif;
   // background: $color-dark-blue;
-  background: linear-gradient(151.15deg, #212c53 17.76%, #2a3661 82.24%);
+
+  background: #2a3661;
+  //background: linear-gradient(151.15deg, #212c53 17.76%, #2a3661 82.24%);
   // color: $white;
   display: flex;
   flex-direction: column;
@@ -40,7 +42,8 @@ main {
 img {
   max-width: 100%;
 }
-.page-tab{
+
+.page-tab {
   background: #D9D9D9;
   border-radius: 48px;
   padding: 5px;
@@ -48,7 +51,8 @@ img {
   margin-top: -10px;
   margin-left: 55px;
   margin-bottom: 40px;
-  &__inner{
+
+  &__inner {
     background: #FFFFFF;
     border-radius: 60px;
     display: flex;
@@ -58,6 +62,7 @@ img {
     padding: 7px;
   }
 }
+
 .page-title {
   font-weight: 700;
   font-size: 40px;
@@ -108,18 +113,21 @@ img {
       top: 0;
     }
   }
-  h2{
+
+  h2 {
     font-weight: 400;
     font-size: 35px;
     line-height: 128.74%;
     color: #F8F8F8;
   }
 }
-.dark-bg{
+
+.dark-bg {
   background: #212C53;
   padding: 55px 0 1px;
 }
-.page-desc{
+
+.page-desc {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -130,6 +138,7 @@ img {
   margin-top: -10px;
   margin-bottom: 40px;
 }
+
 .btn {
   background: rgba(209, 253, 255, 0.3);
   border: 2px solid #d1fdff;
@@ -145,11 +154,18 @@ img {
   color: #d1fdff;
   padding: 10px 22px;
   height: 56px;
+  transition: $transition;
 
   &.btn-full {
     width: 100%;
   }
+
+  &:hover {
+    background: #d1fdff;
+    color: #596281;
+  }
 }
-.section{
+
+.section {
   margin-bottom: 110px;
 }

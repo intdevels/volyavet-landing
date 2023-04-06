@@ -7,6 +7,9 @@
       max-width: 576px;
       margin-top: -5px;
     }
+    .slider-navigation__inner{
+      background: #28335e;
+    }
   }
   &-inner{
     display: flex;
@@ -43,9 +46,14 @@
     line-height: 130%;
     text-align: center;
     text-transform: uppercase;
-
+    transition: $transition;
     color: #FFFFFF;
+    cursor: pointer;
+    &:hover{
+      font-weight: 500;
+    }
   }
+
 }
 
 /*=====  End of Apply  ======*/

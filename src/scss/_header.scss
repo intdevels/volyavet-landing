@@ -4,32 +4,37 @@
 
 .header {
   // стили для header
-  &-inner{
+  &-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 0 40px;
-
   }
-  &-logo{
+
+  &-logo {
     // margin-right: 20px;
   }
-  &-menu{}
-  &-list{
+
+  &-menu {
+  }
+
+  &-list {
     display: flex;
     align-items: center;
   }
-  &-item{
+
+  &-item {
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
     text-transform: uppercase;
     color: $color-turquoise;
     padding-right: 33px;
-   
-    &:nth-last-child(1){
+
+    &:nth-last-child(1) {
       padding-right: 0;
     }
+
     // &:nth-last-child(4){
     //   padding-right: 30px;
     //   // color: $color-navy;
@@ -48,12 +53,13 @@
     //   }
     // }
   }
-  &-link{
+
+  &-link {
     color: inherit;
     position: relative;
     padding: 5px 0;
-    
-    &::before{
+
+    &::before {
       position: absolute;
       content: '';
       display: block;
@@ -64,8 +70,31 @@
       bottom: 0;
       transition: $transition;
     }
-    &:hover::before{
+
+    &:hover::before {
       width: 100%;
+    }
+  }
+}
+
+.home-page {
+  .header {
+    .header-item {
+      padding-right: 25px;
+
+      &:nth-last-child(4) {
+        padding-right: 55px;
+      }
+
+      &:nth-last-child(3) {
+        padding-left: 10px;
+      }
+
+      &:nth-last-child(3),
+      &:nth-last-child(2),
+      &:nth-last-child(1) {
+        color: #2A355E;
+      }
     }
   }
 }

@@ -2,47 +2,64 @@
 =                 Service                     =
 =============================================*/
 .service {
- &s{
-   display: flex;
-   align-items: center;
+  &s {
+    display: flex;
+    align-items: center;
     justify-content: center;
-   margin-bottom: 40px;
-   &-block{
-     margin-bottom: 55px;
-     .page-title{
-       margin-top: 0;
-     }
-   }
-   &-footer{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin-bottom: 55px;
-     .btn{
-       max-width: 267px;
-       width: 100%;
-       letter-spacing: 0.3px;
-     }
-   }
- }
+    margin-bottom: 40px;
+
+    &-block {
+      margin-bottom: 55px;
+
+      .page-title {
+        margin-top: 0;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 55px;
+
+      .btn {
+        max-width: 267px;
+        width: 100%;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background: #F8F8F8;
+    }
+  }
 
   position: relative;
   width: 190px;
   height: 190px;
   margin-right: 20px;
-  &:nth-last-child(1){
+  cursor: pointer;
+  &:hover{
+
+  }
+  &:nth-last-child(1) {
     margin-right: 0;
   }
-  &__img{
+
+  &__img {
     width: 100%;
     height: 100%;
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       border-radius: 10px;
     }
   }
-  &__title{
+
+  &__title {
     position: absolute;
     padding: 5px 10px;
     font-weight: 500;
@@ -58,5 +75,9 @@
   }
 
 }
-
+.services-liner{
+    width: 100%;
+    height: 1px;
+    background: #64C1C6;
+}
 /*=====  End of Service  ======*/
